@@ -8,3 +8,4 @@
 
 2.关于界面，我去掉了二维码，因为开发时，我的客户们似乎懒得去扫描二维码哈哈，另引入了外部css以及Javasprict的一些脚本。
 请尊重原创，感谢shaojiankui的开源
+原项目：https://github.com/shaojiankui/iOS-UDID-Safari
