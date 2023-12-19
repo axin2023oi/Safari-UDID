@@ -8,6 +8,10 @@
 
 2.关于界面，我去掉了二维码，因为开发时，我的客户们似乎懒得去扫描二维码哈哈，另引入了外部css以及Javasprict的一些脚本。
 
+3.描述文件内容请结合原仓库的文档进行修改
+
+4.跳转用的描述文件我用了全能签的跳转文件，因为我的ssl证书不行，这里给诺斯客说声sorry
+
 请尊重原创，感谢shaojiankui的开源
 
 原项目：https://github.com/shaojiankui/iOS-UDID-Safari
