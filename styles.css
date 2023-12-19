@@ -1,0 +1,73 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fce4ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    /* 拟态样式 */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 20px); /* 减去内边距 */
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    background-color: #ff4081;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Microsoft Yahei", Arial, Tahoma, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px 0px rgba(255, 64, 129, 0.3);
+}
+
+.buttons:hover {
+    background-color: #f50057;
+}
+
+.udid-intro {
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+#footer {
+    color: #666;
+    margin-top: 20px;
+}
