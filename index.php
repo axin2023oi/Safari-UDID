@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <h1>描述文件的显示标题</h1>
+        <h1> 描述文件的显示标题 </h1>
         <input name="" id="showText" placeholder="未获取UDID时显示显示对话框内的文字" value="<?php echo $_GET['UDID'] ?? ''; ?>" />
         <br><br>
         <a class="buttons" id="getUDIDButton" onclick="downloadSecondFile()">获取UDID</a>
@@ -20,6 +20,9 @@
 
 <script>
 function downloadSecondFile() {
+    var userAgent = navigator.userAgent;
+    var iOSVersion = parseFloat((userAgent.match(/OS (\d+)_(\d+)_?(\d+)?/) || [])[1]);
+    if (iOSVersion < 17.0) {
     var getUDIDButton = document.getElementById("getUDIDButton");
     getUDIDButton.removeEventListener("click", downloadSecondFile); // 避免重复点击触发下载
 
@@ -30,10 +33,15 @@ function downloadSecondFile() {
     setTimeout(function() {
         window.location.href = 'https://sign.drnrt8.cn/sign/UDID/TZ.mobileprovision';
     }, 3000); // 3000 毫秒（3 秒）后开始下载第二个文件
+}else {
+        window.location.href = 'udid.mobileconfig'; // 实际获取udid描述文件
+        alert('当前系统为ios17，请手动前往设置安装描述文件');
+    }
 }
+
 </script>
         <br><br>
-        <p class="udid-intro">前端按钮下显示的文字</p>
+        <p class="udid-intro"> 前端按钮下显示的文字 </p>
         <div id="footer">
             @这是一个署名
         </div>
